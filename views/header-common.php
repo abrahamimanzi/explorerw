@@ -1,59 +1,76 @@
-
-    <nav class="navbar navbar-expand-lg navbar-light bg-t18" id="mainNav">
-      <div class="container">
-        <a class="navbar-brand js-scroll-trigger" href="<?=DN?>/"><img src="<?=DN?>/img/logo.png" class="logo"></a>
+<nav class="navbar navbar-expand-lg navbar-light fixed-top" id="mainNav">
+    <div class="container">
+        <!-- <a class="navbar-brand" href="<?=DN?>">
+            <img src="images/logo.png" class="logo-image">
+        </a> -->
+        <a class="navbar-brand" href="<?=DN?>">
+            <b>EXPLORE RWANDA</b>
+            <br>
+            <small>Tourist information website</small>
+        </a>
         <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
+            <i class="icon icon-list"></i>
         </button>
         <div class="collapse navbar-collapse" id="navbarResponsive">
-          <ul class="navbar-nav ml-auto navbar-left">
-            <li class="nav-item">
-              <a class="nav-link js-scroll-trigger" href="<?=DN?>/#program">Program</a>
+            <ul class="navbar-nav mx-auto">
+                <!-- <li class="nav-item">
+                        <a class="nav-link" href="<?=DN?>">Home</a>
+                </li> -->
+                <li class="nav-item">
+                    <a class="nav-link" href="why-rwanda">Why Rwanda</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Where to stay</a>
+                </li>
+                <!-- <li class="nav-item">
+                    <a class="nav-link" href="#">What to see & do</a>
+                </li> -->
+                <li class="nav-item">
+                    <a class="nav-link" href="where-to-go">Where to go</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="plan-your-trip">Plan your trip</a>
+                </li>
+            </ul>
+            <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                English 
+                </a>
+                <div class="dropdown-menu">
+                    <a class="dropdown-item" href="#">Kinyarwanda</a>
+                    <a class="dropdown-item" href="#">French</a>
+                    <a class="dropdown-item" href="#">English</a>
+                </div>
             </li>
-            <li class="nav-item">
-              <a class="nav-link js-scroll-trigger" href="<?=DN?>/register">Register</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link js-scroll-trigger" href="<?=DN?>/sponsor">Sponsor or Exhibit</a>
-            </li>
-            <li class="nav-item">
-              <!-- <a class="nav-link js-scroll-trigger" href="#">Ms Geek / Face The Gorillas </a> -->
-            </li>
-            <li class="nav-item">
-              <a class="nav-link js-scroll-trigger" href="<?=DN?>/plan">Plan Your Trip</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link js-scroll-trigger" target="_blank" href="https://www.smartafrica.org/">About Smart Africa</a>
-            </li>
-          </ul>
-          <ul class="nav navbar-nav navbar-right">
-            <?php /* ?>
-            <li class="dropdown">
-              <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button">
-                <span class="lnr lnr-layers"></span> About Us</a>
-              <ul class="dropdown-menu dropdown-menu-custom">
-                <li><a href="<?=DN?>/smartafrica">About Smart Africa</a></li>
-                <li><a href="<?=DN?>/about">About Transform Africa</a></li>
-              </ul>
-            </li>
-            <?php */ ?>
-            <li>
-              <a href="register" style="background: #2a51a3; border-radius: 4px; color: #f78e20;
-    padding-bottom: 15px;padding-top: 15px;padding: 10px 15px;"><span class="lnr lnr-pencil"></span> Register now
-              </a>
+            <!-- <li class="nav-item redirect-link" style=""> -->
+            <li class="nav-item dropdown myaccount-link">
+                <!-- <a class="nav-link" href="<?=DN?>/login">Login</a> -->
+                <?php 
+                    if($session_subscriber->isLoggedIn()){ ?>
+                        <!-- <a class="nav-link" href="<?=DN?>/net/logout">Logout</a> -->
+                        <!-- <a class="nav-link" href="<?=DN?>/net/logout" style="font-size: 14px !important;">My Account</a> -->
 
-              <!-- <a href="" style="background: #2a51a3; border-radius: 4px; color: #f78e20; border-bottom: 0.5px dashed #f78e20"><span class="lnr lnr-calendar-full"></span>
-                <strong>MAY</strong> | 12<sup style="text-transform: lowercase">th</sup> - 14<sup style="text-transform: lowercase">th</sup>
-              </a> -->
+                        <a class="nav-link " href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" style="font-size: 14px !important;padding: .5rem .2rem;">
+                        My Account 
+                        </a>
+                        <div class="dropdown-menu">
+                            <a class="dropdown-item" href="#">My Profile</a>
+                            <!-- <a class="dropdown-item" href="#">French</a> -->
+                            <a class="dropdown-item" href="<?=DN?>/net/logout">Logout</a>
+                        </div>
+                    <?php
+                    }else{?>
+                        <a class="nav-link" data-toggle="modal" data-target="#myModal">Login</a>
+                        <?php
+                    }
+                ?>
+                
+                
 
             </li>
-          </ul>
+
+                
+            <img src="<?=DN?>/images/flag.png" class="flag-img md-block d-none d-sm-none d-lg-block">
         </div>
-      </div>
-    </nav>
-
-
-
-
-
-
+    </div>
+</nav>

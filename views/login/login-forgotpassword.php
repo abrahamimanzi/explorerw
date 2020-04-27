@@ -17,21 +17,20 @@
 			</ol>
 			<img class="img img-responsive" src="<?=DNADMIN?>/icon/capcha.png"/> -->
 		</div>
-		<div class="col-sm-6 col-md-6"><br/><br/><br/><br/>
+		<div class="col-sm-6 col-md-6"><br/><br/><br/>
 			<div class="signup_form_container">
 				<!-- multistep form -->
 				<form method="post" id="recover_form" autocomplete="nope">
-				  <!-- fieldsets -->
-				  <br/>
-				  <br/>
-				  <br/>
+				    <!-- fieldsets -->
+				    <br/>
 
 				  	<fieldset id="login_personal_data">
 				    <div class="panel login_panel">
                       
 					<div class="panel-heading">
                         <div class="app_logo">
-                            <img src="<?=DNADMIN?>/icon/logo-tas-01.png" class="app_icon img" style="width: 135px;">
+                            <!-- <img src="<?=DNADMIN?>/icon/logo-tas-01.png" class="app_icon img" style="width: 135px;"> -->
+                            <b>Find your Account</b>
                         </div>
 					</div>
 					   <div class="panel-body">
@@ -47,7 +46,7 @@
                             <div class="login_fieldset">
                                 <div class="field">
                                     <div class="input-group ">
-                                        <label class="input-group-addon" for="recover-email"><span class="glyphicon glyphicon-user"></span></label>
+                                        <label class="input-group-addon" for="recover-email"><span class="glyphicon glyphicon-user fa fa-envelope"></span></label>
                                         <input id="recover-email" class="data_in one required" name="recover-email" type="email" placeholder="Enter your Email address" required>
                                     </div>
                                 </div>
@@ -57,8 +56,8 @@
                             <div class="row">
                                 <div class="col-sm-12 text-center submit_btn_div">
                                     
-                                    <button id="recoverValidBtn" data-fieldset="#recover_form"  class="btn validation_btn recover_btn submit action-button" name="recoverValidBtn" type="submit">
-                                        <span class="btn_icon glyphicon glyphicon-log-in"></span> <span class="btn_label">Submit</span>
+                                    <button id="recoverValidBtn" data-fieldset="#recover_form"  class="btn validation_btn recover_btn submit action-button btn btn-success" name="recoverValidBtn" type="submit">
+                                        <span class="btn_icon glyphicon glyphicon-log-in fa fa-check-circle"></span> <span class="btn_label">Submit</span>
                                     </button>
                                     <?php if(isset($form->ERRORS_SCRIPT['recover-email'])){?>
                                         <script>
@@ -80,13 +79,14 @@
                         <div class="panel-footer">
                             <div class="row">
                                 <div class="col-sm-12">
-                                    <span class="glyphicon glyphicon-menu-left"></span>  <a href="<?=DN?>/login"> Back to Login </a>
+                                    <span class="glyphicon glyphicon-menu-left"></span>  
+                                    <a class="login-links" href="<?=DN?>/login"> Back to Login </a>
                                 </div>
                             </div>
                         </div>
                     </div>
                         
-					</fieldset>
+					</fieldset><br/><br/><br/>
 				</form>
 			</div>
 			<div class="clearfix" style="margin: 0;"></div>

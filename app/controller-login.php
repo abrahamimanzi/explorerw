@@ -107,7 +107,9 @@ if(Input::checkInput('webToken','post','1') && Input::checkInput('request','post
 		case 'participant_login':
 			$form = SubscriberController::login();
 			if($form->ERRORS == false){
-				Redirect::to(DN.'/net');
+                $actual_link = (isset($_SERVER['HTTPS']) && $_SERVER['HTTPS'] === 'on' ? "https" : "http") . "://$_SERVER[HTTP_HOST]$_SERVER[REQUEST_URI]";
+                // Redirect::to(DN.'/net');
+                Redirect::to($actual_link);
 			}else{
 				//echo errors
 			}

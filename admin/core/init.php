@@ -1,9 +1,9 @@
 <?php ob_start();
-session_start();
 ini_set('session.save_path',realpath(dirname('sessions')));
 //error_reporting(0);
 ini_set('display_errors', 1);
 ini_set('display_startup_errors', 1);
+session_start();
 error_reporting(E_ALL);
 date_default_timezone_set('Africa/Maputo');
 
@@ -70,7 +70,7 @@ $GLOBALS['config'] = array(
 		'host' => 'localhost',
 		'username' => 'root',
 		'password' => '',
-		'db' => 'smartafr_tas18_test'
+		'db' => 'expolerw'
 	),
 	'remember' => array(
 		'cookie_name' => 'hash',
@@ -95,7 +95,7 @@ $GLOBALS['config'] = array(
 	),
 	'url' => array(
 		'app_dir'=>"",
-		'home' => "$http://{$_SERVER['HTTP_HOST']}/test18",
+		'home' => "$http://{$_SERVER['HTTP_HOST']}/explorerw",
 		// 'home' => "$http://{$_SERVER['HTTP_HOST']}/tas17_test",
 		// 'home' => "$http://{$_SERVER['HTTP_HOST']}",
 		'bk_dir' => "admin",

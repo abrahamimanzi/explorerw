@@ -1,7 +1,7 @@
 # Turn Rewrite Engine On
 RewriteEngine on
-ErrorDocument 404 /test18/404
-ErrorDocument 500 /test18/maintenance
+ErrorDocument 404 /explorerw/404
+ErrorDocument 500 /explorerw/maintenance
 Options -Indexes
 
 

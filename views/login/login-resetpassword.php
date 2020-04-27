@@ -7,7 +7,7 @@
 <div class="container">
 	<div class="row">
 		<div class="col-sm-6 col-md-6">
-			  <br/>
+			<!--   <br/>
 			  <br/>
 			<hr style="border-top: 0.5px solid #000 height: 1px;">
 			<ol class="glance text-default">
@@ -15,7 +15,7 @@
 				<li><img class="li-icon img img-responsive" src="<?=DNADMIN?>/icon/news.png"> See updates from the TAS News Feed.<//li>
 				<li><img class="li-icon img img-responsive" src="<?=DNADMIN?>/icon/share.png"> Share what's happening in your Timeline.<//li>
 			</ol>
-			<img class="img img-responsive" src="<?=DNADMIN?>/icon/capcha.png"/>
+			<img class="img img-responsive" src="<?=DNADMIN?>/icon/capcha.png"/> -->
 		</div>
 		<div class="col-sm-6 col-md-6"><br/><br/><br/><br/>
 			<div class="signup_form_container">
@@ -31,7 +31,8 @@
                       
 					<div class="panel-heading">
                         <div class="app_logo">
-                            <img src="<?=DNADMIN?>/icon/logo-tas-01.png" class="app_icon img" style="width: 135px;">
+                            <!-- <img src="<?=DNADMIN?>/icon/logo-tas-01.png" class="app_icon img" style="width: 135px;"> -->
+                            <b>Reset your password</b>
                         </div>
 					</div>
 					   <div class="panel-body">
@@ -47,7 +48,7 @@
                             <div class="login_fieldset">
                                 <div class="field">
                                     <div class="input-group ">
-                                        <label class="input-group-addon" for="reset-password"><span class="glyphicon glyphicon-lock"></span></label>
+                                        <label class="input-group-addon" for="reset-password"><span class="glyphicon glyphicon-lock fa fa-lock"></span></label>
                                         <input id="reset-password" class="data_in one required" name="reset-password" type="password" placeholder="Enter new password" required>
                                     </div>
                                 </div>
@@ -56,8 +57,8 @@
                             <input type="hidden" class="hidden" name="webToken" value="true" />
                             <div class="row">
                                 <div class="col-sm-12 text-center submit_btn_div">
-                                    <button id="resetPasswordValidBtn" data-fieldset="#resetpassword_form"  class="btn validation_btn resetpassword_btn submit action-button" name="resetPasswordValidBtn" type="submit">
-                                        <span class="btn_icon glyphicon glyphicon-log-in"></span> <span class="btn_label">Submit</span>
+                                    <button id="resetPasswordValidBtn" data-fieldset="#resetpassword_form"  class="btn validation_btn resetpassword_btn reset_btn submit action-button btn btn-success" name="resetPasswordValidBtn" type="submit">
+                                        <span class="btn_icon glyphicon glyphicon-log-in fa fa-check-circle"></span> <span class="btn_label">Submit</span>
                                     </button>
                                     <?php if(isset($form->ERRORS_SCRIPT['reset-password'])){?>
                                         <script>
@@ -80,7 +81,8 @@
                         <div class="panel-footer">
                             <div class="row">
                                 <div class="col-sm-12">
-                                    <span class="glyphicon glyphicon-menu-left"></span>  <a href="<?=DN?>/login"> Back to Login </a>
+                                    <span class="glyphicon glyphicon-menu-left"></span>  
+                                    <a class="login-links" href="<?=DN?>/login"> Back to Login </a>
                                 </div>
                             </div>
                         </div>

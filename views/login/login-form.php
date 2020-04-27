@@ -50,21 +50,20 @@
 			</ol> -->
 			<!-- <img class="img img-responsive" src="<?=DNADMIN?>/icon/capcha.png"/> -->
 		</div>
-		<div class="col-sm-6 col-md-6">
+		<div class="col-sm-6 col-md-6"><br/>
 			<div class="signup_form_container">
 				<!-- multistep form -->
 				<form method="post" id="login_form" autocomplete="nope">
 				  <!-- fieldsets -->
-			      <br/>
-				  <br/>
-				  <br/>
 
 				  	<fieldset id="login_personal_data">
 				    <div class="panel login_panel">
                       
 					<div class="panel-heading">
                         <div class="app_logo">
-                            <img src="<?=DNADMIN?>/icon/logo-tas-01.png" class="app_icon img" style="width: 135px;">
+                            <!-- <img src="<?=DNADMIN?>/icon/logo-tas-01.png" class="app_icon img" style="width: 135px;"> -->
+
+                            <b>Login to your account</b>
                         </div>
 					</div>
 					   <div class="panel-body">
@@ -78,14 +77,14 @@
                             <div class="login_fieldset">
                                 <div class="field">
                                     <div class="input-group ">
-                                        <span class="input-group-addon" id="basic-addon1"><span class="glyphicon glyphicon-user"></span></span>
+                                        <span class="input-group-addon" id="basic-addon1"><span class="glyphicon glyphicon-user fa fa-user"></span></span>
                                       <input id="login_username" class="data_in one required" name="login_username" type="text"  placeholder="Username" required aria-describedby="basic-addon1">
                                     </div>
                                 </div>
                                 <br>
                                 <div class="field">
                                     <div class="input-group">
-                                        <span class="input-group-addon" id="basic-addon1"><span class="glyphicon glyphicon-lock"></span></span>
+                                        <span class="input-group-addon" id="basic-addon1"><span class="glyphicon glyphicon-lock fa fa-lock"></span></span>
                                       <input id="login_password" class="data_in two required" name="login_password" type="password" placeholder="Password" required  placeholder="Username" required aria-describedby="basic-addon1">
                                     </div>
                                 </div>
@@ -95,12 +94,13 @@
                             
                             <div class="row">
                                 <div class="col-sm-12 text-center submit_btn_div">
-                                    <p class="text-default" style="font-size: 13px; text-align: left; padding: 0 20px">
+                                    <p class="text-default" style="font-size: 13px; text-align: left; padding: 0 20px;color: #1e3f7c !important;">
                                         By logging, you hereby confirm that you agree to our
                                         <span data-toggle="modal" data-target="#tcsModal_1" style="display: inline-block;color: #2a51a3; text-decoration: underline;cursor: pointer; font-size: 14px" >Terms and Conditions</span> and 
                                         <span data-toggle="modal" data-target="#tcsModal_2" style="display: inline-block;color: #2a51a3; text-decoration: underline;cursor: pointer; font-size: 14px" > Privacy Policy</span>
-                                     <span style="color: red; font-size: 12px; display: block"> <?php if($form->ERRORS){ echo @$form->ERRORS_SCRIPT['check'][0];}?> </span></p>
-                                    <button id="loginValidBtn" data-fieldset="#login_form"  class="btn validation_btn login_btn submit action-button" name="loginValidBtn" type="submit"><span class="btn_icon glyphicon glyphicon-log-in"></span> <span class="btn_label">Login</span></button>
+                                     <span style="color: red; font-size: 12px; display: block"> <?php if($form->ERRORS){ echo @$form->ERRORS_SCRIPT['check'][0];}?> </span>
+                                    </p>
+                                    <button id="loginValidBtn" data-fieldset="#login_form"  class="btn validation_btn login_btn submit action-button btn btn-success" name="loginValidBtn" type="submit"><span class="btn_icon glyphicon glyphicon-log-in fa fa-check-circle"></span> <span class="btn_label">Login</span></button>
                                     <?php if(isset($form->ERRORS_SCRIPT['username'])){?>
                                         <script>
                                             $(document).ready(function(){
@@ -125,14 +125,17 @@
                         <div class="panel-footer">
                             <div class="row">
                                 <div class="col-sm-6">
-                                    <a href="<?=DN?>/login/forgotpassword">Forgot Your Password? </a>
+                                    <a class="login-links" href="<?=DN?>/login/forgotpassword">Forgot Your Password? </a>
+                                </div>
+                                <div class="col-sm-6">
+                                    <a class="login-links" href="<?=DN?>/login/forgotpassword">Sign In Or Create an Account</a>
                                 </div>
                             </div>
                         </div>
                     </div>
                         
 					</fieldset>
-				</form><br><br>
+				</form><br>
 			</div>
 			<div class="clearfix" style="margin: 0;"></div>
 			
