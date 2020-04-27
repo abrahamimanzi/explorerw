@@ -1,0 +1,139 @@
+    /*
+    Flaticon icon font: Flaticon
+    Creation date: 28/10/2018 17:52
+    */
+
+    @font-face {
+  font-family: "Flaticon";
+  src: url("./Flaticon.eot");
+  src: url("./Flaticon.eot?#iefix") format("embedded-opentype"),
+       url("./Flaticon.woff") format("woff"),
+       url("./Flaticon.ttf") format("truetype"),
+       url("./Flaticon.svg#Flaticon") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@media screen and (-webkit-min-device-pixel-ratio:0) {
+  @font-face {
+    font-family: "Flaticon";
+    src: url("./Flaticon.svg#Flaticon") format("svg");
+  }
+}
+
+    .fi:before{
+        display: inline-block;
+  font-family: "Flaticon";
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  line-height: 1;
+  text-decoration: inherit;
+  text-rendering: optimizeLegibility;
+  text-transform: none;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-font-smoothing: antialiased;
+  font-smoothing: antialiased;
+    }
+
+    .flaticon-light-bulb:before { content: "\f100"; }
+.flaticon-tractor:before { content: "\f101"; }
+.flaticon-agriculture:before { content: "\f102"; }
+.flaticon-email:before { content: "\f103"; }
+.flaticon-government:before { content: "\f104"; }
+.flaticon-calendar:before { content: "\f105"; }
+.flaticon-calendar-1:before { content: "\f106"; }
+.flaticon-checklist:before { content: "\f107"; }
+.flaticon-calendar-2:before { content: "\f108"; }
+.flaticon-tax:before { content: "\f109"; }
+.flaticon-tax-1:before { content: "\f10a"; }
+.flaticon-open-book:before { content: "\f10b"; }
+.flaticon-education:before { content: "\f10c"; }
+.flaticon-group:before { content: "\f10d"; }
+.flaticon-delivery-truck:before { content: "\f10e"; }
+.flaticon-shipped:before { content: "\f10f"; }
+.flaticon-bus:before { content: "\f110"; }
+.flaticon-bus-1:before { content: "\f111"; }
+.flaticon-domain:before { content: "\f112"; }
+.flaticon-hand:before { content: "\f113"; }
+.flaticon-money:before { content: "\f114"; }
+.flaticon-doctor:before { content: "\f115"; }
+.flaticon-care:before { content: "\f116"; }
+.flaticon-health:before { content: "\f117"; }
+.flaticon-id-card:before { content: "\f118"; }
+.flaticon-id-card-1:before { content: "\f119"; }
+.flaticon-fingerprints:before { content: "\f11a"; }
+.flaticon-print:before { content: "\f11b"; }
+.flaticon-debt:before { content: "\f11c"; }
+.flaticon-money-1:before { content: "\f11d"; }
+.flaticon-mobile:before { content: "\f11e"; }
+.flaticon-online-shop:before { content: "\f11f"; }
+.flaticon-scroll:before { content: "\f120"; }
+.flaticon-world:before { content: "\f121"; }
+.flaticon-air-freight:before { content: "\f122"; }
+.flaticon-policeman:before { content: "\f123"; }
+.flaticon-handcuffs:before { content: "\f124"; }
+.flaticon-auction:before { content: "\f125"; }
+.flaticon-planning:before { content: "\f126"; }
+.flaticon-running:before { content: "\f127"; }
+.flaticon-bicycle:before { content: "\f128"; }
+.flaticon-destination:before { content: "\f129"; }
+.flaticon-backpacker:before { content: "\f12a"; }
+.flaticon-shield:before { content: "\f12b"; }
+.flaticon-economics:before { content: "\f12c"; }
+.flaticon-energy-tower:before { content: "\f12d"; }
+.flaticon-mine:before { content: "\f12e"; }
+.flaticon-history:before { content: "\f12f"; }
+.flaticon-antenna:before { content: "\f130"; }
+.flaticon-tower:before { content: "\f131"; }
+    
+    $font-Flaticon-light-bulb: "\f100";
+    $font-Flaticon-tractor: "\f101";
+    $font-Flaticon-agriculture: "\f102";
+    $font-Flaticon-email: "\f103";
+    $font-Flaticon-government: "\f104";
+    $font-Flaticon-calendar: "\f105";
+    $font-Flaticon-calendar-1: "\f106";
+    $font-Flaticon-checklist: "\f107";
+    $font-Flaticon-calendar-2: "\f108";
+    $font-Flaticon-tax: "\f109";
+    $font-Flaticon-tax-1: "\f10a";
+    $font-Flaticon-open-book: "\f10b";
+    $font-Flaticon-education: "\f10c";
+    $font-Flaticon-group: "\f10d";
+    $font-Flaticon-delivery-truck: "\f10e";
+    $font-Flaticon-shipped: "\f10f";
+    $font-Flaticon-bus: "\f110";
+    $font-Flaticon-bus-1: "\f111";
+    $font-Flaticon-domain: "\f112";
+    $font-Flaticon-hand: "\f113";
+    $font-Flaticon-money: "\f114";
+    $font-Flaticon-doctor: "\f115";
+    $font-Flaticon-care: "\f116";
+    $font-Flaticon-health: "\f117";
+    $font-Flaticon-id-card: "\f118";
+    $font-Flaticon-id-card-1: "\f119";
+    $font-Flaticon-fingerprints: "\f11a";
+    $font-Flaticon-print: "\f11b";
+    $font-Flaticon-debt: "\f11c";
+    $font-Flaticon-money-1: "\f11d";
+    $font-Flaticon-mobile: "\f11e";
+    $font-Flaticon-online-shop: "\f11f";
+    $font-Flaticon-scroll: "\f120";
+    $font-Flaticon-world: "\f121";
+    $font-Flaticon-air-freight: "\f122";
+    $font-Flaticon-policeman: "\f123";
+    $font-Flaticon-handcuffs: "\f124";
+    $font-Flaticon-auction: "\f125";
+    $font-Flaticon-planning: "\f126";
+    $font-Flaticon-running: "\f127";
+    $font-Flaticon-bicycle: "\f128";
+    $font-Flaticon-destination: "\f129";
+    $font-Flaticon-backpacker: "\f12a";
+    $font-Flaticon-shield: "\f12b";
+    $font-Flaticon-economics: "\f12c";
+    $font-Flaticon-energy-tower: "\f12d";
+    $font-Flaticon-mine: "\f12e";
+    $font-Flaticon-history: "\f12f";
+    $font-Flaticon-antenna: "\f130";
+    $font-Flaticon-tower: "\f131";

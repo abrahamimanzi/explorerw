@@ -1,0 +1,58 @@
+@font-face {
+    font-family: Airglyphs;
+    src: url("../fonts/text-font/airglyphs-90036810a493c3fe1887f77687a2ec9c.eot");
+    src: url("../fonts/text-font/airglyphs-bb873ab4254c83409cf1fa6f4759fa3e.woff") format("woff"), 
+    url("../fonts/text-font/airglyphs-d90404cb884b74a27264dda25857850d.ttf") format("truetype"),
+    url("../fonts/text-font/airglyphs-7d42310c5dceba0df8c1d505e2812d4b.svg") format("svg");
+    font-weight: normal;
+    font-style: normal
+}
+
+@font-face {
+    font-family: Circular;
+    src: url("../fonts/text-font/Circular_Air-Book-eaaba3d0441e5ea52254a765afe58361.eot");
+    src: url("../fonts/text-font/Circular_Air-Book-b222d268121d6dbe23687b805b117820.woff2") format("woff2"), 
+    url("../fonts/text-font/Circular_Air-Book-5e9166cb8de519304777ec4f64ea2b10.woff") format("woff"), 
+    url("../fonts/text-font/Circular_Air-Book-98e37c7514bb7096658cabbf6d43e783.svg") format("svg");
+    font-weight: normal;
+    font-style: normal
+}
+
+@font-face {
+    font-family: Circular_Air-Book_Italic;
+    src: url("../fonts/text-font/Circular_Air-Book_Italic-35e1cf57d93dc4eb3db11cc2448cb91f.eot");
+    src: url("../fonts/text-font/Circular_Air-Book_Italic-4909b413294f9048153d6dee23438b24.woff2") format("woff2"), 
+    url("../fonts/text-font/Circular_Air-Book_Italic-1db902f5b85bbb0964e2994434edbe16.woff") format("woff"), 
+    url("../fonts/text-font/Circular_Air-Book_Italic-0d9eb203b260869dc2470ae35162fc1e.svg") format("svg");
+    font-weight: normal;
+    font-style: italic
+}
+
+@font-face {
+    font-family: Circular_Air-Bold;
+    src: url("../fonts/text-font/Circular_Air-Bold-6edd475d1e268821bd7cd7ce0e9f7419.eot");
+    src: url("../fonts/text-font/Circular_Air-Bold-f6a8738f19ae14110b36ff16220403d9.woff2") format("woff2"), 
+    url("../fonts/text-font/Circular_Air-Bold-f035b2dd663315f58d818cb468d3e61d.woff") format("woff"), 
+    url("../fonts/text-font/Circular_Air-Bold-190e0f26359cdc7d8d093e1a04983ed3.svg") format("svg");
+    font-weight: 700;
+    font-style: normal
+}
+
+@font-face {
+    font-family: Circular_Air-Light;
+    src: url("../fonts/text-font/Circular_Air-Light-f1e5cb3a4ceb8c8cccc717811af70b90.eot");
+    src: url("../fonts/text-font/Circular_Air-Light-8191d5473a5ccd7b25e738600215254c.woff2") format("woff2"), 
+    url("../fonts/text-font/Circular_Air-Light-8950dbf90cbf87bc875f4cb05698e773.woff") format("woff"), 
+    url("../fonts/text-font/Circular_Air-Light-ea56415eb35466568fd22e41c7352796.svg") format("svg");
+    font-weight: 300;
+    font-style: normal
+}
+@font-face {
+    font-family: Airmoji_Standalone;
+    src: url("../fonts/text-font/airmojix-Regular-fc9053ca0c4c48fb6cf74dddbe79ffa4.eot");
+    src: url("../fonts/text-font/airmojix-Regular-a11058486e79b2dd9fa1455051f9df4a.woff2") format("woff2"), 
+    url("../fonts/text-font/airmojix-Regular-651813bf44a6d73fe63a03444eb3e094.woff") format("woff"), 
+    url("../fonts/text-font/airmojix-Regular-ad76fa9e85d2b02a85cc9f41bf7f75c9.svg") format("svg");
+    font-weight: normal;
+    font-style: normal
+}
